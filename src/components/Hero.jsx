@@ -13,7 +13,7 @@ import dpyramid from "../assets/dp.svg";
 const navigation = [
   { name: "Home", href: "#" },
   { name: "About", href: "#about" },
-  { name: "Projects", href: "#" },
+  { name: "Projects", href: "#project" },
   { name: "Certificates", href: "#" },
 ];
 
