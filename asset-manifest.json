@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.1b0804d3.css",
+    "main.js": "/my-portfolio/static/js/main.a109bb41.js",
+    "static/media/me.png": "/my-portfolio/static/media/me.829fc8042dd0e159b805.png",
+    "static/media/developer.jpg": "/my-portfolio/static/media/developer.e32a540efaa623a29b0c.jpg",
+    "static/media/tantra.jpeg": "/my-portfolio/static/media/tantra.5f5e4c3aca412b6a0ae3.jpeg",
+    "static/media/resume.pdf": "/my-portfolio/static/media/resume.0b6ff194c1f4e81de3cb.pdf",
+    "static/media/ktu-lab.jpeg": "/my-portfolio/static/media/ktu-lab.1bb174391c21c7e96b4f.jpeg",
+    "static/media/logo.png": "/my-portfolio/static/media/logo.ff5fe00aae720dd6876e.png",
+    "static/media/owl.svg": "/my-portfolio/static/media/owl.b983c1f4aa65c8793f6d60fb8a4fa7a3.svg",
+    "static/media/pyramid.svg": "/my-portfolio/static/media/pyramid.6204ea745f501f0725a1061afdded7a2.svg",
+    "static/media/dp.svg": "/my-portfolio/static/media/dp.e257d173901301e94a77d460367b7bc7.svg",
+    "static/media/theme.svg": "/my-portfolio/static/media/theme.6c1b4321adbbf552a1e75e2f371f30b1.svg",
+    "index.html": "/my-portfolio/index.html",
+    "main.1b0804d3.css.map": "/my-portfolio/static/css/main.1b0804d3.css.map",
+    "main.a109bb41.js.map": "/my-portfolio/static/js/main.a109bb41.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b0804d3.css",
+    "static/js/main.a109bb41.js"
+  ]
+}
