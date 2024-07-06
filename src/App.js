@@ -1,10 +1,10 @@
 import "./App.css";
 
 import Hero from "./components/Hero";
-// import Footer from "./components/Footer";
 import About from "./components/About";
 import Project from "./components/Project";
-// import Hero from "./components/Hero";
+import Footer from "./components/Footer";
+import Journey from "./components/Journey";
 // import Certificate from "./components/Certificate";
 
 function App() {
@@ -13,6 +13,8 @@ function App() {
       <Hero />
       <About />
       <Project />
+      <Journey />
+      <Footer />
     </div>
   );
 }

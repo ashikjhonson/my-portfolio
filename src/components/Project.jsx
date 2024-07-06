@@ -47,23 +47,20 @@ export default function Project() {
           className="absolute inset-0 w-full h-full bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 dark:from-[#ff80b5] dark:to-[#9089fc]"
         />
       </div>
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" id="project">
         <div className="mx-auto max-w-2xl py-16 lg:max-w-none ">
           <h2 className="text-3xl pb-10 font-bold tracking-tight text-white sm:text-4xl">
             My Projects
           </h2>
 
-          <div
-            className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0"
-            id="project"
-          >
+          <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
             {projects.map((project) => (
               <div key={project.name} className="group relative">
                 <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
                   <img
                     alt={project.imageAlt}
                     src={project.imageSrc}
-                    className="h-full w-full object-fill border border-pink-200 rounded-lg"
+                    className="h-full w-full object-fill border border-violet-800 rounded-lg"
                   />
                 </div>
                 <h3 className="mt-6 text-sm text-gray-300">

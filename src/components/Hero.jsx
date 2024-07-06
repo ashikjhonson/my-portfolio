@@ -11,10 +11,10 @@ import pyramid from "../assets/pyramid.svg";
 import dpyramid from "../assets/dp.svg";
 
 const navigation = [
-  { name: "Home", href: "#" },
-  { name: "About", href: "#about" },
-  { name: "Projects", href: "#project" },
-  { name: "Certificates", href: "#" },
+  { name: "ℍ𝕠𝕞𝕖", href: "/" },
+  { name: "𝔸𝕓𝕠𝕦𝕥", href: "#about" },
+  { name: "ℙ𝕣𝕠𝕛𝕖𝕔𝕥", href: "#project" },
+  { name: "𝕋𝕚𝕞𝕖𝕝𝕚𝕟𝕖", href: "#timeline" },
 ];
 
 export default function Hero() {
@@ -35,17 +35,15 @@ export default function Hero() {
   };
 
   return (
-    <div className="bg-white dark:bg-[#0e1525]">
+    <div>
       <header className="absolute inset-x-0 top-0 z-50">
         <nav
           aria-label="Global"
           className="flex items-center align-middle justify-between p-6 lg:px-8"
         >
           <div className="flex lg:flex-1">
-            <a href="/" className="-m-1.5 p-1.5">
-              <span className="sr-only">𝔸𝕊ℍ𝕀𝕂.</span>
-              <img alt="" src={logo} className="hidden sm:block h-8 w-auto" />
-              <span className="sm:hidden text-xl dark:text-white">𝔸𝕊ℍ𝕀𝕂.</span>
+            <a href="/" className=" ">
+              <span className=" text-xl dark:text-white">𝔸𝕊ℍ𝕀𝕂</span>
             </a>
           </div>
           <div className="flex align-middle lg:hidden">
@@ -63,13 +61,14 @@ export default function Hero() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-sm font-semibold leading-6 text-gray-900 dark:text-gray-300"
+                className="leading-6 text-lg text-gray-900 dark:text-gray-100"
               >
                 {item.name}
               </a>
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+            {/* Don't delete above div :)*/}
             {/* <a
               href="#"
               className="text-sm font-semibold leading-6 text-gray-900 dark:text-gray-300"
@@ -89,16 +88,16 @@ export default function Hero() {
           className="lg:hidden bg-white dark:bg-[#0e1525]"
         >
           <div className="fixed inset-0 z-50" />
-          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white dark:bg-[#0e1525] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 dark:ring-gray-700/10">
+          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#0e1525] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 dark:ring-gray-700/10 text-white">
             <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">𝔸𝕊ℍ𝕀𝕂.</span>
-                <img alt="" src={logo} className="h-8 w-auto" />
+              <a href="/" className="-m-1.5 p-1.5 text-xl">
+                <span className="">𝔸𝕊ℍ𝕀𝕂</span>
+                {/* <img alt="" src={logo} className="h-8 w-auto" /> */}
               </a>
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(false)}
-                className="-m-2.5 rounded-md p-2.5 text-gray-700 dark:text-gray-300"
+                className="-m-2.5 rounded-md p-2.5 "
               >
                 <span className="sr-only">Close menu</span>
                 <XMarkIcon aria-hidden="true" className="h-6 w-6" />
@@ -111,7 +110,8 @@ export default function Hero() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:underline underline-offset-8 hover:text-green-600"
+                      onClick={() => setMobileMenuOpen(false)}
                     >
                       {item.name}
                     </a>
@@ -179,18 +179,18 @@ export default function Hero() {
               />
               <span className="text-[#00c500] pl-2"> {"/>"} </span>
             </h1>
-            <p className="mt-6  leading-8 text-gray-600 dark:text-gray-300">
+            <p className="mt-6 sm:hidden leading-8 text-gray-600 dark:text-gray-300">
               Final-year Engineering student, Passionate about innovation and
               technology.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
-                class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-base font-medium text-gray-900 rounded-full group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800"
+                class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-gray-900 rounded-full group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white "
                 download={"resume_ashik.pdf"}
                 href={resume}
                 target="_blank"
               >
-                <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-full  group-hover:bg-opacity-0">
+                <span class="relative px-5 sm:px-3 py-2.5 sm:py-1 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-full group-hover:bg-opacity-0 font-light">
                   View Resume
                 </span>
               </a>
