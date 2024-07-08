@@ -90,13 +90,15 @@ export default function Journey() {
               </div>
               <div className="relative col-span-12 px-4 space-y-6 sm:col-span-9">
                 <div className="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 before:absolute before:top-2 before:bottom-0 before:w-0.5 before:-left-3 before:dark:bg-gray-300">
-                  <div className="flex flex-col mb-10 font-serif relative before:absolute before:top-2 before:w-4 before:h-4 before:rounded-full before:left-[-35px] before:z-[1] before:dark:bg-purple-600">
+                  <div className="flex flex-col mb-10 font-serif relative before:absolute before:top-2 before:w-4 before:h-4 before:rounded-full before:left-[-35px] before:z-[1] before:dark:bg-purple-800">
                     <p className="mt-3 text-base text-gray-200 sm:text-gray-400">
-                      <span className="border border-red-600 pl-2 py-1 text-white rounded-md max-sm:uppercase">
-                        live <span className="text-7xl text-red-500">.</span>
+                      <span className="bg-red-600 pl-2 pr-1 py-1 text-white rounded-md max-sm:uppercase">
+                        live <span className="text-5xl text-white">.</span>
                       </span>{" "}
-                      <span className="animate-pulses pl-5">
-                        await fetching ...
+                      <span className="animate-pulse pl-1 sm:pl-5">
+                        {/* await fetching ... */}
+                        {/* Aiming for the Stars */}
+                        Pursuing Greatness
                       </span>
                     </p>
                   </div>

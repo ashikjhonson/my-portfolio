@@ -76,6 +76,15 @@ export default function Project() {
             ))}
           </div>
         </div>
+        <a
+          class=" w-fit mx-auto inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-base font-medium text-gray-900 rounded-full group bg-gradient-to-br from-purple-400 to-blue-600 group-hover:from-purple-400 group-hover:to-blue-600 hover:text-white dark:text-white"
+          href="https://github.com/ashikjhonson?tab=repositories"
+          target="_blank"
+        >
+          <span class=" px-3 py-2 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-full  group-hover:bg-opacity-0">
+            View More
+          </span>
+        </a>
       </div>
     </div>
   );
