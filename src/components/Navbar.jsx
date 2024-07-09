@@ -8,6 +8,8 @@ const navigation = [
   { name: "𝔸𝕓𝕠𝕦𝕥", href: "#about" },
   { name: "ℙ𝕣𝕠𝕛𝕖𝕔𝕥", href: "#project" },
   { name: "𝕁𝕠𝕦𝕣𝕟𝕖𝕪", href: "#timeline" },
+  { name: "ℂ𝕖𝕣𝕥𝕚𝕗𝕚𝕔𝕒𝕥𝕖𝕤", href: "#certificates" },
+  { name: "𝔾𝕒𝕝𝕝𝕖𝕣𝕪", href: "#gallery" },
 ];
 
 const Navbar = () => {
@@ -23,9 +25,9 @@ const Navbar = () => {
     }
   }, [isDarkMode]);
 
-  const toggleDarkMode = () => {
-    setIsDarkMode((prevMode) => !prevMode);
-  };
+  // const toggleDarkMode = () => {
+  //   setIsDarkMode((prevMode) => !prevMode);
+  // };
   return (
     <header className="fixed inset-x-0 top-0 z-50 backdrop-blur-lg bg-black/10 border-b border-gray-600">
       <nav
