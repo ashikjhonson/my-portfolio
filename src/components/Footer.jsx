@@ -7,10 +7,10 @@ const Footer = () => {
       <div className="relative isolate overflow-hidden pt-44">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            <h2 className="text-3xl 2xl:text-5xl font-bold tracking-tight text-white sm:text-4xl">
               Get in touch.
             </h2>
-            <p className="mt-4 text-lg leading-8 max-sm:px-4 text-justify sm:text-center text-gray-300">
+            <p className="mt-4 text-lg 2xl:text-xl leading-8 max-sm:px-4 text-justify sm:text-center text-gray-300">
               I'd love to hear from you! Feel free to reach out via email for
               any inquiries or collaborations.
             </p>
@@ -38,7 +38,7 @@ const Footer = () => {
         </div>
         <div className="pt-20 pb-10">
           <span className="text-xl text-gray-300">
-            <span className="text-sm">Designed and built with passion by</span>{" "}
+            <span className="text-sm 2xl:text-lg">Designed and built with passion by</span>{" "}
             𝔸𝕊ℍ𝕀𝕂 ❤️
           </span>
         </div>
