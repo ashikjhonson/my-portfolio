@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.7ec53559.css",
-    "main.js": "/my-portfolio/static/js/main.3efbe3e7.js",
+    "main.css": "/my-portfolio/static/css/main.58730e79.css",
+    "main.js": "/my-portfolio/static/js/main.e7e94d72.js",
     "static/media/cl5.jpg": "/my-portfolio/static/media/cl5.54b2f104b5d0116bd47a.jpg",
     "static/media/cl6.jpg": "/my-portfolio/static/media/cl6.a96001f2aa891f083070.jpg",
     "static/media/e1.jpg": "/my-portfolio/static/media/e1.fcbbc3e3f073409caa20.jpg",
@@ -25,15 +25,15 @@
     "static/media/web.png": "/my-portfolio/static/media/web.18dd1deba291ef83ed25.png",
     "static/media/ktu-lab.jpeg": "/my-portfolio/static/media/ktu-lab.1bb174391c21c7e96b4f.jpeg",
     "static/media/logo.png": "/my-portfolio/static/media/logo.ff5fe00aae720dd6876e.png",
-    "static/media/pyramid.svg": "/my-portfolio/static/media/pyramid.6204ea745f501f0725a1061afdded7a2.svg",
-    "static/media/dp.svg": "/my-portfolio/static/media/dp.e257d173901301e94a77d460367b7bc7.svg",
-    "static/media/dstar.svg": "/my-portfolio/static/media/dstar.0c8c46c42c76927e8c1a8e7bb531735e.svg",
+    "static/media/pyramid.svg": "/my-portfolio/static/media/pyramid.583dcc1d2ecfa4d3f77c70c82daa10e0.svg",
+    "static/media/dp.svg": "/my-portfolio/static/media/dp.fa3a7db152011ecf58c0033e709373c6.svg",
+    "static/media/dstar.svg": "/my-portfolio/static/media/dstar.c4d3b742d62a753a1c49d4e748327897.svg",
     "index.html": "/my-portfolio/index.html",
-    "main.7ec53559.css.map": "/my-portfolio/static/css/main.7ec53559.css.map",
-    "main.3efbe3e7.js.map": "/my-portfolio/static/js/main.3efbe3e7.js.map"
+    "main.58730e79.css.map": "/my-portfolio/static/css/main.58730e79.css.map",
+    "main.e7e94d72.js.map": "/my-portfolio/static/js/main.e7e94d72.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ec53559.css",
-    "static/js/main.3efbe3e7.js"
+    "static/css/main.58730e79.css",
+    "static/js/main.e7e94d72.js"
   ]
 }
