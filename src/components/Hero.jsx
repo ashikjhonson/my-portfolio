@@ -1,23 +1,22 @@
 import { useState, useEffect } from "react";
-import { Dialog, DialogPanel } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+// import { Dialog, DialogPanel } from "@headlessui/react";
+// import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { TypeAnimation } from "react-type-animation";
-import logo from "../assets/logo.png";
+// import logo from "../assets/logo.png";
 import me from "../assets/me.png";
 import resume from "../assets/resume.pdf";
-import theme from "../assets/theme.svg";
-import owl from "../assets/owl.svg";
+// import theme from "../assets/theme.svg";
+// import owl from "../assets/owl.svg";
 import pyramid from "../assets/pyramid.svg";
 import dpyramid from "../assets/dp.svg";
 
-const navigation = [
-  { name: "ℍ𝕠𝕞𝕖", href: "/" },
-  { name: "𝔸𝕓𝕠𝕦𝕥", href: "#about" },
-  { name: "ℙ𝕣𝕠𝕛𝕖𝕔𝕥", href: "#project" },
-  { name: "𝕋𝕚𝕞𝕖𝕝𝕚𝕟𝕖", href: "#timeline" },
-];
-
 export default function Hero() {
+  const navigation = [
+    { name: "ℍ𝕠𝕞𝕖", href: "/" },
+    { name: "𝔸𝕓𝕠𝕦𝕥", href: "#about" },
+    { name: "ℙ𝕣𝕠𝕛𝕖𝕔𝕥", href: "#project" },
+    { name: "𝕋𝕚𝕞𝕖𝕝𝕚𝕟𝕖", href: "#timeline" },
+  ];
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(true);
 
@@ -35,7 +34,7 @@ export default function Hero() {
   };
 
   return (
-    <div className="relative isolate px-6 lg:px-8">
+    <div className="relative isolate px-6 lg:px-8" id="home">
       <div
         aria-hidden="true"
         className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
