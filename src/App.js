@@ -36,17 +36,19 @@ function App() {
   }, []);
 
   return (
-    <div className="App bg-gray-100 dark:bg-[#0e1525] select-none">
+    <>
       {loading && <Loader />}
-      <Navbar />
-      <Hero />
-      <About />
-      <Project />
-      <Journey />
-      <Carousel />
-      <Gallery />
-      <Footer />
-    </div>
+      <div className="App bg-gray-100 dark:bg-[#0e1525] select-none">
+        <Navbar />
+        <Hero />
+        <About />
+        <Project />
+        <Journey />
+        <Carousel />
+        <Gallery />
+        <Footer />
+      </div>
+    </>
   );
 }
 

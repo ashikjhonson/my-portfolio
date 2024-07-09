@@ -22,19 +22,20 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #000000;
   z-index: 9999;
 }
 
 .spinner {
   border-radius: 50%;
   width: 60px;
-  height: 60px;
-  animation: spin 3s linear infinite;
+  height: 40px;
+  animation: spin 2.5s linear infinite;
 }
 
 @keyframes spin {

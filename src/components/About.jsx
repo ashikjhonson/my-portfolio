@@ -47,7 +47,6 @@ export default function About() {
               <a
                 href="https://www.linkedin.com/in/ashikjhonson"
                 target="_blank"
-                className="bg-white"
               >
                 <svg
                   fill="#fff"

@@ -37,7 +37,7 @@ const Navbar = () => {
   //   setIsDarkMode((prevMode) => !prevMode);
   // };
   return (
-    <header className="fixed inset-x-0 top-0 z-50 backdrop-blur-lg bg-black/10 border-b border-gray-600">
+    <header className="fixed inset-x-0 top-0 z-50 backdrop-blur-lg bg-black/10 border-b border-gray-700">
       <nav
         aria-label="Global"
         className="flex items-center align-middle justify-between p-6 lg:px-8"
