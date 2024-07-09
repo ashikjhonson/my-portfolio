@@ -1,12 +1,7 @@
 import { useState, useEffect } from "react";
-// import { Dialog, DialogPanel } from "@headlessui/react";
-// import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { TypeAnimation } from "react-type-animation";
-// import logo from "../assets/logo.png";
 import me from "../assets/me.png";
 import resume from "../assets/resume.pdf";
-// import theme from "../assets/theme.svg";
-// import owl from "../assets/owl.svg";
 import pyramid from "../assets/pyramid.svg";
 import dpyramid from "../assets/dp.svg";
 
@@ -78,7 +73,7 @@ export default function Hero() {
               wrapper="span"
               speed={10}
               repeat={Infinity}
-              className="lowercase text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-emerald-600  font-light  min-w-4 bg-blue-500"
+              className="lowercase pb-1 text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-emerald-600 font-light bg-blue-500"
             />
             <span className="text-[#00c500] pl-2"> {"/>"} </span>
           </h1>
@@ -88,12 +83,12 @@ export default function Hero() {
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
-              class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-gray-900 rounded-full group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white "
+              className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-gray-900 rounded-full group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white "
               download={"resume_ashik.pdf"}
               href={resume}
               target="_blank"
             >
-              <span class="relative px-5 sm:px-3 py-2.5 sm:py-1 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-full group-hover:bg-opacity-0 font-light">
+              <span className="relative px-5 sm:px-3 py-2.5 sm:py-1 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-full group-hover:bg-opacity-0 font-light">
                 View Resume
               </span>
             </a>

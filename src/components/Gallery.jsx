@@ -40,9 +40,9 @@ const Gallery = () => {
       >
         Showcase Gallery
       </h1>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-2 px-5 sm:px-60">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-2 px-5 sm:px-60">
         {images.map((image) => {
-          return <ImgDiv ims={image} />;
+          return <ImgDiv ims={image} key={image} />;
         })}
       </div>
     </div>
@@ -53,9 +53,16 @@ export default Gallery;
 
 const ImgDiv = ({ ims }) => {
   return (
-    <div class="grid gap-4">
+    <div className="grid gap-4">
       {ims.map((im) => {
-        return <img className="h-auto max-w-full rounded-lg" src={im} alt="" />;
+        return (
+          <img
+            className="h-auto max-w-full rounded-lg"
+            src={im}
+            alt=""
+            key={im}
+          />
+        );
       })}
     </div>
   );

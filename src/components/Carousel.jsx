@@ -1,15 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
 import p1 from "../assets/certificates/aws.jpg";
 import p2 from "../assets/certificates/code.png";
 import p3 from "../assets/certificates/java.png";
 import p4 from "../assets/certificates/quiz.png";
 import p5 from "../assets/certificates/web.png";
 
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
 const Crsl = () => {
-  const imgs = [p1, p2, p3, p4, p5];
   return (
     <div className="w-screen sm:w-3/5 px-5 sm:px-10 mx-auto">
       <h1
@@ -30,11 +29,3 @@ const Crsl = () => {
 };
 
 export default Crsl;
-
-const ImgDiv = ({ src }) => {
-  return (
-    <div>
-      <img src={src} />
-    </div>
-  );
-};

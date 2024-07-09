@@ -34,11 +34,8 @@ const events = [
 
 export default function Journey() {
   return (
-    <div
-      className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8"
-      id="timeline"
-    >
-      <div className="relative isolate overflow-hidden  px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0 max-sm:py-20 max-sm:mx-5 max-sm:rounded-lg">
+    <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
+      <div className="relative isolate overflow-hidden px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0 max-sm:py-20 max-sm:mx-5 max-sm:rounded-lg">
         <svg
           viewBox="0 0 1024 1024"
           aria-hidden="true"
@@ -77,7 +74,7 @@ export default function Journey() {
             </radialGradient>
           </defs>
         </svg>
-        <section className=" dark:text-white">
+        <section className="dark:text-white" id="timeline">
           <div className="container max-w-5xl py-12 mx-auto">
             <div className="grid gap-4 sm:mx-4 sm:grid-cols-12">
               <div className="col-span-12 sm:col-span-3">
@@ -97,8 +94,8 @@ export default function Journey() {
                       </span>{" "}
                       <span className="animate-pulse pl-1 sm:pl-5">
                         {/* await fetching ... */}
-                        {/* Aiming for the Stars */}
-                        Pursuing Greatness
+                        Aiming for the Stars
+                        {/* Pursuing Greatness */}
                       </span>
                     </p>
                   </div>
@@ -108,6 +105,7 @@ export default function Journey() {
                         title={event.title}
                         desc={event.desc}
                         year={event.year}
+                        key={event.title}
                       />
                     );
                   })}

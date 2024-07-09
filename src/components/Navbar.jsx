@@ -25,6 +25,14 @@ const Navbar = () => {
     }
   }, [isDarkMode]);
 
+  const handleSmoothScroll = (event, href) => {
+    setMobileMenuOpen(false);
+    event.preventDefault();
+    const targetElement = document.querySelector(href);
+    targetElement.scrollIntoView({ behavior: "smooth" });
+    setMobileMenuOpen(false);
+  };
+
   // const toggleDarkMode = () => {
   //   setIsDarkMode((prevMode) => !prevMode);
   // };
@@ -35,7 +43,7 @@ const Navbar = () => {
         className="flex items-center align-middle justify-between p-6 lg:px-8"
       >
         <div className="flex lg:flex-1">
-          <a href="/" className=" ">
+          <a href="/" className="">
             <span className=" text-xl text-white">𝔸𝕊ℍ𝕀𝕂</span>
           </a>
         </div>
@@ -55,6 +63,7 @@ const Navbar = () => {
               key={item.name}
               href={item.href}
               className="leading-6 text-lg text-gray-900 dark:text-gray-100"
+              onClick={(event) => handleSmoothScroll(event, item.href)}
             >
               {item.name}
             </a>
@@ -104,7 +113,8 @@ const Navbar = () => {
                     key={item.name}
                     href={item.href}
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:underline underline-offset-8 hover:text-green-600"
-                    onClick={() => setMobileMenuOpen(false)}
+                    // onClick={() => setMobileMenuOpen(false)}
+                    onClick={(event) => handleSmoothScroll(event, item.href)}
                   >
                     {item.name}
                   </a>

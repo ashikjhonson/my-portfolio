@@ -34,7 +34,7 @@ const projects = [
 
 export default function Project() {
   return (
-    <div className="relative isolate px-6 lg:px-8 " id="project">
+    <div className="relative isolate px-6 lg:px-8" id="project">
       <div
         aria-hidden="true"
         className="absolute inset-0 -z-10 transform-gpu overflow-hidden blur-3xl"
@@ -47,7 +47,7 @@ export default function Project() {
           className="absolute inset-0 w-full h-full bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 dark:from-[#ff80b5] dark:to-[#9089fc]"
         />
       </div>
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-5">
         <div className="mx-auto max-w-2xl py-16 lg:max-w-none ">
           <h2 className="text-3xl pb-10 font-bold tracking-tight text-white sm:text-4xl">
             My Projects
@@ -77,11 +77,11 @@ export default function Project() {
           </div>
         </div>
         <a
-          class=" w-fit mx-auto inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-base font-medium text-gray-900 rounded-full group bg-gradient-to-br from-purple-400 to-blue-600 group-hover:from-purple-400 group-hover:to-blue-600 hover:text-white dark:text-white"
+          className=" w-fit mx-auto inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-base font-medium text-gray-900 rounded-full group bg-gradient-to-br from-purple-400 to-blue-600 group-hover:from-purple-400 group-hover:to-blue-600 hover:text-white dark:text-white"
           href="https://github.com/ashikjhonson?tab=repositories"
           target="_blank"
         >
-          <span class=" px-3 py-2 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-full  group-hover:bg-opacity-0">
+          <span className=" px-3 py-2 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-full  group-hover:bg-opacity-0">
             View More
           </span>
         </a>
