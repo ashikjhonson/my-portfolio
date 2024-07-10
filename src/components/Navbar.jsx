@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import liarrow from "../assets/li-arrow.svg";
 
 const navigation = [
   { name: "ℍ𝕠𝕞𝕖", href: "#home" },
@@ -54,7 +55,7 @@ const Navbar = () => {
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 dark:text-gray-300"
           >
             <span className="sr-only">Open main menu</span>
-            <Bars3Icon aria-hidden="true" className="h-6 w-6" />
+            <Bars3Icon aria-hidden="true" className="h-6 w-6 fill-green-600" />
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
@@ -93,7 +94,7 @@ const Navbar = () => {
         <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#0e1525] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 dark:ring-gray-700/10 text-white">
           <div className="flex items-center justify-between">
             <a href="/" className="-m-1.5 p-1.5 text-xl">
-              <span className="">𝔸𝕊ℍ𝕀𝕂</span>
+              <span className="text-bg text-2xl pl-2">𝔸𝕊ℍ𝕀𝕂</span>
               {/* <img alt="" src={logo} className="h-8 w-auto" /> */}
             </a>
             <button
@@ -102,22 +103,28 @@ const Navbar = () => {
               className="-m-2.5 rounded-md p-2.5 "
             >
               <span className="sr-only">Close menu</span>
-              <XMarkIcon aria-hidden="true" className="h-6 w-6" />
+              {/* <XMarkIcon aria-hidden="true" className="h-6 w-6" /> */}
+              <p aria-hidden="true" className=" text-bg text-2xl">
+                🆇
+              </p>
             </button>
           </div>
           <div className="mt-6 flow-root">
-            <div className="-my-6 divide-y divide-gray-500/10 dark:divide-gray-700/10">
+            <div className="-my-6 ">
               <div className="space-y-2 py-6">
                 {navigation.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:underline underline-offset-8 hover:text-green-600"
-                    // onClick={() => setMobileMenuOpen(false)}
-                    onClick={(event) => handleSmoothScroll(event, item.href)}
-                  >
-                    {item.name}
-                  </a>
+                  <div className="flex items-center mx-auto ">
+                    <img src={liarrow} alt="..." className="h-8 " />
+                    <a
+                      key={item.name}
+                      href={item.href}
+                      className="-mx-3 block rounded-lg px-3 py-2 text-2xl text-bg  font-semibold leading-7 hover:underline underline-offset-8 hover:text-green-600"
+                      // onClick={() => setMobileMenuOpen(false)}
+                      onClick={(event) => handleSmoothScroll(event, item.href)}
+                    >
+                      {item.name}
+                    </a>
+                  </div>
                 ))}
               </div>
               <div className="py-6"></div>
