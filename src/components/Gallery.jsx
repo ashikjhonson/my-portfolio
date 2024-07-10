@@ -1,17 +1,17 @@
 import React from "react";
 
-import th1 from "../assets/gallery/th1.jpg";
+import th1 from "../assets/gallery/th1.jpeg";
 import th2 from "../assets/gallery/th2.jpg";
-import th3 from "../assets/gallery/th3.jpg";
+import th3 from "../assets/gallery/th3.jpeg";
 import c1 from "../assets/gallery/c1.jpg";
 import c2 from "../assets/gallery/c2.jpg";
-import c3 from "../assets/gallery/c3.jpg";
+import c3 from "../assets/gallery/c3.jpeg";
 import cl1 from "../assets/gallery/cl1.jpg";
-import cl5 from "../assets/gallery/cl5.jpg";
-import cl6 from "../assets/gallery/cl6.jpg";
-import e1 from "../assets/gallery/e1.jpg";
+import cl5 from "../assets/gallery/cl5.jpeg";
+import cl6 from "../assets/gallery/cl6.jpeg";
+import e1 from "../assets/gallery/e1.jpeg";
 import e3 from "../assets/gallery/e3.jpeg";
-import p1 from "../assets/gallery/p1.jpg";
+import p1 from "../assets/gallery/p1.jpeg";
 
 const Gallery = () => {
   const images = [
@@ -38,7 +38,7 @@ const Gallery = () => {
         className="text-3xl font-bold tracking-tight text-white sm:text-4xl pt-20 pb-10"
         id="gallery"
       >
-        Showcase Gallery
+        Showcase
       </h1>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-2 px-5 sm:px-60">
         {images.map((image) => {
