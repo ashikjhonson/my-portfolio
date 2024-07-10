@@ -4,13 +4,18 @@ import { CalendarDaysIcon, HandRaisedIcon } from "@heroicons/react/24/outline";
 const Footer = () => {
   return (
     <footer className="mx-auto pt-20 w-full ">
-      <div className="relative isolate overflow-hidden pt-44">
+      <div className="relative isolate overflow-hidden pt-5 sm:pt-10">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="">
-            <h2 className="text-3xl 2xl:text-5xl font-bold tracking-tight text-white sm:text-4xl">
-              Get in touch.
+          <div className="" id="footer">
+            <h2
+              className="text-3xl sm:text-4xl 2xl:text-5xl font-bold w-fit mx-auto pb-10 2xl:pt-44 tracking-tight bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent"
+              id="gallery"
+            >
+              Let's Say Hi
+              <br />
+              <span className="text-white">Thank You </span>
             </h2>
-            <p className="mt-4 text-lg 2xl:text-xl leading-8 max-sm:px-4 text-justify sm:text-center text-gray-300">
+            <p className="text-lg mx-auto w-5/6 sm:w-1/3 2xl:text-xl leading-8 max-sm:px-4 text-justify sm:text-center text-gray-300">
               I'd love to hear from you! Feel free to reach out via email for
               any inquiries or collaborations.
             </p>
@@ -38,7 +43,9 @@ const Footer = () => {
         </div>
         <div className="pt-20 pb-10">
           <span className="text-xl text-gray-300">
-            <span className="text-sm 2xl:text-lg">Designed and built with passion by</span>{" "}
+            <span className="text-sm 2xl:text-lg">
+              Designed and built with passion by
+            </span>{" "}
             𝔸𝕊ℍ𝕀𝕂 ❤️
           </span>
         </div>

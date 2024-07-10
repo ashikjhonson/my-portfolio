@@ -78,11 +78,18 @@ export default function Journey() {
           <div className="container max-w-5xl 2xl:max-w-6xl py-12 mx-auto 2xl:pt-44">
             <div className="grid gap-4 sm:mx-4 2xl:mx-0 sm:grid-cols-12">
               <div className="col-span-12 sm:col-span-3 ">
-                <div className="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-purple-800">
-                  <h3 className="text-3xl 2xl:text-4xl font-semibold">Timeline</h3>
-                  <span className="text-sm 2xl:text-base font-bold tracking-wider uppercase dark:text-gray-400">
+                <div className="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-purple-600">
+                  <h3 className="text-3xl w-fit max-sm:mx-auto 2xl:text-4xl font-semibold bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent">
+                    Timeline
+                  </h3>
+                  <span className="text-sm 2xl:text-base font-bold tracking-wider uppercase text-gray-100">
                     my Journey through time
                   </span>
+                  {/* <h2 className="text-3xl sm:text-4xl 2xl:text-5xl font-bold w-fit mx-auto tracking-tight bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent">
+                    Journey
+                    <br />
+                    <span className="text-white">My Timeline</span>
+                  </h2> */}
                 </div>
               </div>
               <div className="relative col-span-12 px-4 space-y-6 sm:col-span-9">
@@ -128,7 +135,9 @@ const Item = ({ title, desc, year }) => {
       <time className="text-xs 2xl:text-lg tracking-wide uppercase text-gray-400">
         {year}
       </time>
-      <p className="mt-3 text-base 2xl:text-xl text-gray-200 sm:text-gray-400 2xl:pb-10">{desc}</p>
+      <p className="mt-3 text-base 2xl:text-xl text-gray-200 sm:text-gray-400 2xl:pb-10">
+        {desc}
+      </p>
     </div>
   );
 };

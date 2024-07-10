@@ -27,10 +27,11 @@ export default function About() {
           </defs>
         </svg>
         <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-          <h2 className="text-3xl sm:text-4xl 2xl:text-5xl font-bold tracking-tight text-white">
+          <h2 className="text-3xl sm:text-4xl 2xl:text-5xl font-bold tracking-tight bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent">
+            {/* <h2 className="text-3xl sm:text-4xl 2xl:text-5xl font-bold tracking-tight bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent"> */}
             Who Am I ?
             <br />
-            About Me
+            <span className="text-white ">About Me</span>
           </h2>
           <p className="mt-6 text-lg 2xl:text-2xl text-justify leading-8 text-gray-300">
             <span className="pl-10">Hey</span> there!👋 I'm a tech enthusiast

@@ -11,12 +11,14 @@ import { Carousel } from "react-responsive-carousel";
 const Crsl = () => {
   return (
     <div className="w-screen sm:w-3/5 2xl:w-4/5 px-5 sm:px-10 2xl:px-32 mx-auto">
-      <h1
-        className="text-3xl 2xl:text-5xl font-bold tracking-tight text-white sm:text-4xl pt-20 pb-10 2xl:pt-44"
+      <h2
+        className="text-3xl sm:text-4xl 2xl:text-5xl sm:pb-5 font-bold w-fit mx-auto pt-20 pb-10 2xl:pt-44 tracking-tight bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent"
         id="certificates"
       >
-        Certificates
-      </h1>
+        Recognitions
+        <br />
+        <span className="text-white">My Bonafides </span>
+      </h2>
       <Carousel autoPlay infiniteLoop showThumbs={false} showStatus={false}>
         <img src={p1} className="rounded-xl max-sm:h-[400px]" alt="..." />
         <img src={p2} className="rounded-xl max-sm:h-[400px]" alt="..." />

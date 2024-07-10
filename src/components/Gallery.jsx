@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import Modal from "react-modal";
 
 import th1 from "../assets/gallery/th1.jpeg";
 import th2 from "../assets/gallery/th2.jpg";
@@ -14,12 +15,26 @@ import e3 from "../assets/gallery/e3.jpeg";
 import p1 from "../assets/gallery/p1.jpeg";
 
 const Gallery = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = (image) => {
+    setSelectedImage(image);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setSelectedImage(null);
+    setIsModalOpen(false);
+  };
+
   const images = [
     [c1, th1, c3],
     [th2, e1, c2],
     [cl6, cl5, e3],
     [cl1, p1, th3],
   ];
+
   return (
     <div className="relative isolate pt-20 2xl:px-20">
       <div
@@ -34,36 +49,58 @@ const Gallery = () => {
           className="absolute inset-0 w-full h-full bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 dark:from-[#ff80b5] dark:to-[#9089fc]"
         />
       </div>
-      <h1
-        className="text-3xl 2xl:text-5xl font-bold tracking-tight text-white sm:text-4xl pt-20 pb-10 2xl:pt-44"
+      <h2
+        className="text-3xl sm:text-4xl 2xl:text-5xl sm:pb-5 font-bold w-fit mx-auto pt-20 pb-10 2xl:pt-44 tracking-tight bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent"
         id="gallery"
       >
         Showcase
-      </h1>
+        <br />
+        <span className="text-white">Gallery</span>
+      </h2>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-2 px-5 sm:px-60">
-        {images.map((image) => {
-          return <ImgDiv ims={image} key={image} />;
+        {images.map((image, index) => {
+          return <ImgDiv ims={image} key={index} openModal={openModal} />;
         })}
       </div>
+      <Modal
+        isOpen={isModalOpen}
+        onRequestClose={closeModal}
+        shouldCloseOnOverlayClick={true}
+        contentLabel="Image View"
+        className="modal w-4/5 sm:w-fit sm:mt-10"
+        overlayClassName="overlay"
+        ariaHideApp={false}
+      >
+        {/* <button onClick={closeModal} className="close-button"></button> */}
+        {selectedImage && (
+          <img
+            className="h-auto max-w-full sm:h-[400px] object-fill rounded-lg mx-auto"
+            src={selectedImage}
+            alt="Enlarged View"
+            onClick={closeModal}
+          />
+        )}
+      </Modal>
     </div>
   );
 };
 
-export default Gallery;
-
-const ImgDiv = ({ ims }) => {
+const ImgDiv = ({ ims, openModal }) => {
   return (
     <div className="grid gap-4">
       {ims.map((im) => {
         return (
           <img
-            className="h-auto max-w-full rounded-lg"
+            className="h-auto max-w-full rounded-lg cursor-pointer"
             src={im}
             alt=""
             key={im}
+            onClick={() => openModal(im)}
           />
         );
       })}
     </div>
   );
 };
+
+export default Gallery;

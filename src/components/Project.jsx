@@ -49,8 +49,20 @@ export default function Project() {
       </div>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 2xl:px-2 pt-5">
         <div className="mx-auto max-w-2xl py-16 lg:max-w-none ">
-          <h2 className="text-3xl 2xl:text-5xl pb-10 2xl:pt-10 font-bold tracking-tight text-white sm:text-4xl">
-            My Projects
+          {/* <h2 className="text-3xl 2xl:text-5xl pb-5 2xl:pt-10 font-bold tracking-tight sm:text-4xl ">
+            <span className="bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent">
+              What I've Built
+            </span>
+            <br />
+            <span className="bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent">
+              Latest Projects
+            </span>
+          </h2>
+           */}
+          <h2 className="text-3xl sm:text-4xl 2xl:text-5xl sm:pb-5 font-bold w-fit mx-auto tracking-tight bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent">
+            What I've built
+            <br />
+            <span className="text-white">Latest Projects</span>
           </h2>
 
           <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
