@@ -29,7 +29,7 @@ export default function Hero() {
   };
 
   return (
-    <div className="relative isolate px-6 lg:px-8" id="home">
+    <div className="relative isolate px-6 lg:px-8 " id="home">
       <div
         aria-hidden="true"
         className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -39,7 +39,7 @@ export default function Hero() {
             clipPath:
               "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
           }}
-          className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 dark:from-[#ff80b5] dark:to-[#9089fc] sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+          className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#cd1f67] to-[#9089fc] opacity-30 dark:from-[#ff80b5] dark:to-[#9089fc] sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
         />
       </div>
       <div className="mx-auto max-w-2xl py-32 sm:py-16">
@@ -50,15 +50,15 @@ export default function Hero() {
           <img
             src={me}
             alt=""
-            className="mx-auto bg-transparent h-44 hover:shadow-xl hover:shadow-gray-900 shadow-2xl dark:shadow-gray-400 dark:contrast-200   rounded-3xl mb-10 "
+            className="mx-auto bg-transparent h-44 2xl:h-72 2xl:mt-28 hover:shadow-xl hover:shadow-gray-900 shadow-2xl dark:shadow-gray-400 dark:contrast-200   rounded-3xl mb-10 "
           />
           <img
             src={isDarkMode ? pyramid : dpyramid}
             alt=""
             className="mx-auto h-8 sm:h-10"
           />
-          <h1 className="text-3xl font-bold text-bg-dark ">Hello </h1>
-          <h1 className="text-4xl font-bold tracking-tight bg-gradient-to-r from-emerald-500 to-lime-600 bg-clip-text text-transparent">
+          <h1 className="text-3xl 2xl:text-5xl font-bold text-bg-dark ">Hello </h1>
+          <h1 className="text-4xl 2xl:text-6xl font-bold tracking-tight bg-gradient-to-r from-emerald-500 to-lime-600 bg-clip-text text-transparent">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">
               I'm{" "}
             </span>
@@ -66,7 +66,7 @@ export default function Hero() {
               Ashik
             </span>
           </h1>
-          <h1 className="flex align-middle justify-center text-4xl">
+          <h1 className="flex align-middle justify-center text-4xl 2xl:text-5xl">
             <span className="text-[#00c500] pr-2"> {"< "} </span>
             <TypeAnimation
               sequence={["DEVELOPER", 2000, "ENGINEER", 2000, "LEARNER", 2000]}
@@ -88,7 +88,7 @@ export default function Hero() {
               href={resume}
               target="_blank"
             >
-              <span className="relative px-5 sm:px-3 py-2.5 sm:py-1 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-full group-hover:bg-opacity-0 font-light">
+              <span className="relative px-5 sm:px-3 2xl:px-6 py-2.5 sm:py-1 2xl:py-3 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-full group-hover:bg-opacity-0 font-light 2xl:font-medium">
                 View Resume
               </span>
             </a>

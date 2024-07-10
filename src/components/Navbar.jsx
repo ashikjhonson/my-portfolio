@@ -37,14 +37,14 @@ const Navbar = () => {
   //   setIsDarkMode((prevMode) => !prevMode);
   // };
   return (
-    <header className="fixed inset-x-0 top-0 z-50 backdrop-blur-lg bg-black/10 border-b border-gray-700">
+    <header className="fixed inset-x-0 top-0 z-50 backdrop-blur-lg bg-black/10 border-b border-gray-700 2xl:py-2">
       <nav
         aria-label="Global"
-        className="flex items-center align-middle justify-between p-6 lg:px-8"
+        className="flex items-center align-middle justify-between p-6 lg:px-8 2xl:px-44"
       >
         <div className="flex lg:flex-1">
           <a href="/" className="">
-            <span className=" text-xl text-white">𝔸𝕊ℍ𝕀𝕂</span>
+            <span className=" text-xl 2xl:text-4xl text-white">𝔸𝕊ℍ𝕀𝕂</span>
           </a>
         </div>
         <div className="flex align-middle lg:hidden">
@@ -62,7 +62,7 @@ const Navbar = () => {
             <a
               key={item.name}
               href={item.href}
-              className="leading-6 text-lg text-gray-900 dark:text-gray-100"
+              className="leading-6 text-lg 2xl:text-2xl text-gray-900 dark:text-gray-100"
               onClick={(event) => handleSmoothScroll(event, item.href)}
             >
               {item.name}

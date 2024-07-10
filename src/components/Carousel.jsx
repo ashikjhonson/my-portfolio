@@ -10,9 +10,9 @@ import { Carousel } from "react-responsive-carousel";
 
 const Crsl = () => {
   return (
-    <div className="w-screen sm:w-3/5 px-5 sm:px-10 mx-auto">
+    <div className="w-screen sm:w-3/5 2xl:w-4/5 px-5 sm:px-10 2xl:px-32 mx-auto">
       <h1
-        className="text-3xl font-bold tracking-tight text-white sm:text-4xl pt-20 pb-10"
+        className="text-3xl 2xl:text-5xl font-bold tracking-tight text-white sm:text-4xl pt-20 pb-10 2xl:pt-44"
         id="certificates"
       >
         Certificates

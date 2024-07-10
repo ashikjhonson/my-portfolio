@@ -47,29 +47,29 @@ export default function Project() {
           className="absolute inset-0 w-full h-full bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 dark:from-[#ff80b5] dark:to-[#9089fc]"
         />
       </div>
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-5">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 2xl:px-2 pt-5">
         <div className="mx-auto max-w-2xl py-16 lg:max-w-none ">
-          <h2 className="text-3xl pb-10 font-bold tracking-tight text-white sm:text-4xl">
+          <h2 className="text-3xl 2xl:text-5xl pb-10 2xl:pt-10 font-bold tracking-tight text-white sm:text-4xl">
             My Projects
           </h2>
 
           <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
             {projects.map((project) => (
               <div key={project.name} className="group relative">
-                <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
+                <div className="relative h-80 2xl:h-96 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
                   <img
                     alt={project.imageAlt}
                     src={project.imageSrc}
                     className="h-full w-full object-fill border border-violet-800 rounded-lg"
                   />
                 </div>
-                <h3 className="mt-6 text-sm text-gray-300">
+                <h3 className="mt-6 text-sm 2xl:text-lg text-gray-300">
                   <a href={project.href}>
                     <span className="absolute inset-0" />
                     {project.name}
                   </a>
                 </h3>
-                <p className="text-base font-normal text-white">
+                <p className="text-base 2xl:text-xl font-normal 2xl:font-medium text-white">
                   {project.description}
                 </p>
               </div>
@@ -77,11 +77,11 @@ export default function Project() {
           </div>
         </div>
         <a
-          className=" w-fit mx-auto inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-base font-medium text-gray-900 rounded-full group bg-gradient-to-br from-purple-400 to-blue-600 group-hover:from-purple-400 group-hover:to-blue-600 hover:text-white dark:text-white"
+          className="w-fit mx-auto inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-base font-medium 2xl:text-xl text-gray-900 rounded-full group bg-gradient-to-br from-purple-400 to-blue-600 group-hover:from-purple-400 group-hover:to-blue-600 hover:text-white dark:text-white"
           href="https://github.com/ashikjhonson?tab=repositories"
           target="_blank"
         >
-          <span className=" px-3 py-2 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-full  group-hover:bg-opacity-0">
+          <span className="px-3 2xl:px-6 py-2 2xl:py-4 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-full group-hover:bg-opacity-0">
             View More
           </span>
         </a>

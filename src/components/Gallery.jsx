@@ -21,7 +21,7 @@ const Gallery = () => {
     [cl1, p1, th3],
   ];
   return (
-    <div className="relative isolate pt-20">
+    <div className="relative isolate pt-20 2xl:px-20">
       <div
         aria-hidden="true"
         className="absolute inset-0 -z-10 transform-gpu overflow-hidden blur-3xl"
@@ -35,7 +35,7 @@ const Gallery = () => {
         />
       </div>
       <h1
-        className="text-3xl font-bold tracking-tight text-white sm:text-4xl pt-20 pb-10"
+        className="text-3xl 2xl:text-5xl font-bold tracking-tight text-white sm:text-4xl pt-20 pb-10 2xl:pt-44"
         id="gallery"
       >
         Showcase
