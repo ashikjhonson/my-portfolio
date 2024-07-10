@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.58730e79.css",
-    "main.js": "/my-portfolio/static/js/main.0d92e763.js",
+    "main.css": "/my-portfolio/static/css/main.55d7221a.css",
+    "main.js": "/my-portfolio/static/js/main.6b96ab5b.js",
     "static/media/me.png": "/my-portfolio/static/media/me.829fc8042dd0e159b805.png",
     "static/media/cl5.jpeg": "/my-portfolio/static/media/cl5.dacce265f25460030423.jpeg",
     "static/media/cl6.jpeg": "/my-portfolio/static/media/cl6.84a5d0e883873e40d023.jpeg",
@@ -24,16 +24,17 @@
     "static/media/aws.jpeg": "/my-portfolio/static/media/aws.8ccaa126b65487fd2db2.jpeg",
     "static/media/web.png": "/my-portfolio/static/media/web.18dd1deba291ef83ed25.png",
     "static/media/ktu-lab.jpeg": "/my-portfolio/static/media/ktu-lab.1bb174391c21c7e96b4f.jpeg",
-    "static/media/logo.png": "/my-portfolio/static/media/logo.ff5fe00aae720dd6876e.png",
+    "static/media/logo.jpg": "/my-portfolio/static/media/logo.5a8032a14aae94f3ac66.jpg",
     "static/media/pyramid.svg": "/my-portfolio/static/media/pyramid.6204ea745f501f0725a1061afdded7a2.svg",
     "static/media/dp.svg": "/my-portfolio/static/media/dp.e257d173901301e94a77d460367b7bc7.svg",
-    "static/media/dstar.svg": "/my-portfolio/static/media/dstar.0c8c46c42c76927e8c1a8e7bb531735e.svg",
+    "static/media/dstar.svg": "/my-portfolio/static/media/dstar.e426b999d0b9c1bca56919db8dd81f26.svg",
+    "static/media/li-arrow.svg": "/my-portfolio/static/media/li-arrow.60d5e22a93bf56ac299e6dedd792a1fc.svg",
     "index.html": "/my-portfolio/index.html",
-    "main.58730e79.css.map": "/my-portfolio/static/css/main.58730e79.css.map",
-    "main.0d92e763.js.map": "/my-portfolio/static/js/main.0d92e763.js.map"
+    "main.55d7221a.css.map": "/my-portfolio/static/css/main.55d7221a.css.map",
+    "main.6b96ab5b.js.map": "/my-portfolio/static/js/main.6b96ab5b.js.map"
   },
   "entrypoints": [
-    "static/css/main.58730e79.css",
-    "static/js/main.0d92e763.js"
+    "static/css/main.55d7221a.css",
+    "static/js/main.6b96ab5b.js"
   ]
 }
