@@ -50,14 +50,16 @@ export default function Hero() {
           <img
             src={me}
             alt=""
-            className="mx-auto bg-transparent h-44 2xl:h-72 2xl:mt-28 hover:shadow-xl hover:shadow-gray-900 shadow-2xl dark:shadow-gray-400 dark:contrast-200   rounded-3xl mb-10 "
+            className="mx-auto bg-transparent h-44 2xl:h-72 2xl:mt-28 hover:shadow-xl hover:shadow-gray-900 shadow-2xl dark:shadow-gray-400 contrast-150 hover:contrast-200 rounded-3xl mb-10 "
           />
           <img
             src={isDarkMode ? pyramid : dpyramid}
             alt=""
             className="mx-auto h-8 sm:h-10"
           />
-          <h1 className="text-3xl 2xl:text-5xl font-bold text-bg-dark ">Hello </h1>
+          <h1 className="text-3xl 2xl:text-5xl font-bold text-bg-dark ">
+            Hello{" "}
+          </h1>
           <h1 className="text-4xl 2xl:text-6xl font-bold tracking-tight bg-gradient-to-r from-emerald-500 to-lime-600 bg-clip-text text-transparent">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">
               I'm{" "}

@@ -1,17 +1,26 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon } from "@heroicons/react/24/outline";
 import liarrow from "../assets/li-arrow.svg";
 
 const navigation = [
-  { name: "ℍ𝕠𝕞𝕖", href: "#home" },
-  { name: "𝔸𝕓𝕠𝕦𝕥", href: "#about" },
-  { name: "ℙ𝕣𝕠𝕛𝕖𝕔𝕥", href: "#project" },
-  { name: "𝕁𝕠𝕦𝕣𝕟𝕖𝕪", href: "#timeline" },
-  { name: "ℂ𝕖𝕣𝕥𝕚𝕗𝕚𝕔𝕒𝕥𝕖𝕤", href: "#certificates" },
-  { name: "𝔾𝕒𝕝𝕝𝕖𝕣𝕪", href: "#gallery" },
+  { name: "Home", href: "#home" },
+  { name: "About", href: "#about" },
+  { name: "Project", href: "#project" },
+  { name: "Journey", href: "#timeline" },
+  { name: "Certificates", href: "#certificates" },
+  { name: "Gallery", href: "#gallery" },
 ];
+
+// const navigation = [
+//   { name: "ℍ𝕠𝕞𝕖", href: "#home" },
+//   { name: "𝔸𝕓𝕠𝕦𝕥", href: "#about" },
+//   { name: "ℙ𝕣𝕠𝕛𝕖𝕔𝕥", href: "#project" },
+//   { name: "𝕁𝕠𝕦𝕣𝕟𝕖𝕪", href: "#timeline" },
+//   { name: "ℂ𝕖𝕣𝕥𝕚𝕗𝕚𝕔𝕒𝕥𝕖𝕤", href: "#certificates" },
+//   { name: "𝔾𝕒𝕝𝕝𝕖𝕣𝕪", href: "#gallery" },
+// ];
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -45,7 +54,9 @@ const Navbar = () => {
       >
         <div className="flex lg:flex-1">
           <a href="/" className="">
-            <span className=" text-xl 2xl:text-4xl text-white">𝔸𝕊ℍ𝕀𝕂</span>
+            <span className=" text-xl 2xl:text-4xl bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent sm:text-white">
+              𝔸𝕊ℍ𝕀𝕂
+            </span>
           </a>
         </div>
         <div className="flex align-middle lg:hidden">
@@ -63,7 +74,7 @@ const Navbar = () => {
             <a
               key={item.name}
               href={item.href}
-              className="leading-6 text-lg 2xl:text-2xl text-gray-900 dark:text-gray-100"
+              className="leading-6 font-semibold font-serif text-lg 2xl:text-2xl text-gray-900 dark:text-gray-100"
               onClick={(event) => handleSmoothScroll(event, item.href)}
             >
               {item.name}
@@ -73,12 +84,19 @@ const Navbar = () => {
         {/* Don't delete below div :) */}
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
+            className="font-serif font-semibold relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm text-gray-900 rounded-3xl group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800"
             href="#footer"
-            className="leading-6 text-md 2xl:text-2xl text-gray-900 dark:text-gray-100 border border-white rounded-3xl px-2 pt-1 pb-1.5"
             onClick={(event) => handleSmoothScroll(event, "#footer")}
           >
-            ℂ𝕠𝕟𝕟𝕖𝕔𝕥
+            <span className="relative px-4 py-1.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-3xl group-hover:bg-opacity-0">
+              Contact
+            </span>
           </a>
+          {/* <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
+            <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+              Green to blue
+            </span>
+          </button> */}
         </div>
       </nav>
       <Dialog
@@ -111,7 +129,7 @@ const Navbar = () => {
                     <img src={liarrow} alt="..." className="h-8 " />
                     <a
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-2xl text-bg  font-semibold leading-7 hover:underline underline-offset-8 hover:text-green-600"
+                      className="-mx-3  font-serif block rounded-lg px-3 py-2 text-2xl text-bg leading-7 hover:underline underline-offset-8 hover:text-green-600"
                       // onClick={() => setMobileMenuOpen(false)}
                       onClick={(event) => handleSmoothScroll(event, item.href)}
                     >
